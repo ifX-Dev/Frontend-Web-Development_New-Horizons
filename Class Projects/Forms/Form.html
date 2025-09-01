@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        .box {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <form action="">
+        <h1 class="box"> Registration Form</h1>
+        <p class="box">Please fill the form below</p>
+        <div style="margin-bottom: 10px;">
+            <label for="firstname">First Name</label>
+            <input type="text" id="firstname" name="firstname" value="Gold" disabled required>
+        </div>
+        
+        <div style="margin-bottom: 10px;">
+            <label for="lastname">Last Name</label>
+            <input type="text" id="lastname" name="lastname" maxlength="10" minlength="3" required>
+        </div>
+
+        <div style="margin-bottom: 10px;">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+        
+        <div style="margin-bottom: 10px;">
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" required>
+        </div>
+
+        <div style="margin-bottom: 10px;">
+            <label for="age">Age</label>
+            <input type="number" id="age" name="age" max="19" min="13" required>
+        </div>
+
+        <div style="margin-bottom: 10px;">
+            <p>Account Type (Required)</p>
+            <div>
+            <input type="radio" id="personal" name="accountType" checked>
+            <label for="personal">Personal</label>
+            </div>
+            <div>
+            <input type="radio" id="buisness" name="accountType">
+            <label for="buisness">Buisness</label>
+            </div>
+        </div>
+        <div style="margin-bottom: 10px;">
+            <label for="gender">Gender</label>
+            <select name="gender" id="gender">
+                <option value="">Select One</option>
+                <option value="">Male</option>
+                <option value="">Female</option>
+            </select>
+        </div>
+
+        <div style="margin-bottom: 10px;">
+            <input type="checkbox" id="terms" name="terms" checked>
+            <label for="terms">I accept the <a href="">terms and conditions</a></label>
+        </div>
+
+        <button>Submit</button>
+    </form>
+</body>
+</html>

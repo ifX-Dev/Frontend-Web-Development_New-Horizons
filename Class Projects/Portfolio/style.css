@@ -1,0 +1,255 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+:root {
+    --color-text-orange: #EAB308;
+    --color-text-fadedblue: #6B7280;
+    --color-bg-darkblue: #020617;
+    --color-bg-lightblue: #111827;
+    --color-anchor-inactive: #9CA3AF;
+    --color-anchor-active: #fff;
+}
+
+body {
+    background-color: var(--color-bg-darkblue);
+}
+
+header {
+    height: 62px;
+    padding: 16px 168px;
+    background-color: var(--color-bg-darkblue);
+}
+
+#header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    color: white;
+    font-size: 24px;
+    font-weight: 700;
+    
+}
+
+.logo-span {
+    color: var(--color-text-orange);
+}
+
+#nav-bar {
+    width: 620px;
+}
+
+#nav-list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.list-items {
+    list-style: none;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+a {
+    text-decoration: none;
+    color: var(--color-anchor-inactive);
+}
+
+a:hover {
+    color: var(--color-anchor-active);
+}
+
+.active {
+    color: var(--color-anchor-active);
+}
+
+section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h1, h2 {
+    line-height: 64px;
+}
+
+p {
+    line-height: 27px;
+}
+
+.home {
+    background-color: var(--color-bg-lightblue);
+    height: 629px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.home > div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+    width: 1092px;
+}
+
+.home > div > div {
+    width: 466px;
+    height: 271px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.home > div > div > p {
+    color: var(--color-text-orange);
+    font-size: 16px;
+}
+
+.home h1 {
+    color: white;
+    font-size: 42px;
+    font-weight: 700;
+}
+
+.home > div > div > div > p {
+    color: var(--color-text-fadedblue);
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.home button {
+    padding: 8px 20px;
+    width: 123px;
+    border-radius: 4px;
+    background-color: var(--color-text-orange);
+}
+
+.about {
+    height: 704px;
+}
+
+.about > div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+    width: 1108px;
+}
+
+.about > div > div {
+    width: 509px;
+    height: 348px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.about h2 {
+    color: white;
+    font-size: 42px;
+    font-weight: 700;
+}
+
+.about h2 > span {
+    color: var(--color-text-orange);
+}
+
+.about p {
+    color: var(--color-text-fadedblue);
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.about button {
+    width: 124px;
+    height: 59px;
+    border: 16px 20px;
+    border-radius: 4px;
+    margin-top: 40px;
+    background-color: var(--color-text-orange);
+}
+
+.about_p_top {
+    margin-bottom: 18px;
+}
+
+.portfolio {
+    height: 1006px;
+}
+
+.portfolio > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 1110px;
+}
+
+.portfolio_text {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: space-between;
+    justify-content: space-between;
+    width: 461px;
+    height: 169px;
+    margin-bottom: 80px;
+}
+
+.portfolio_text h2 {
+    color: white;
+    font-size: 42px;
+    font-weight: 700;
+    line-height: 64px;
+}
+
+.portfolio_text h2 > span {
+    color: var(--color-text-orange);
+}
+
+.portfolio_text p {
+    color: var(--color-text-fadedblue);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 27px;
+}
+
+.portfolio_images {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 565px;
+}
+
+.portfolio_images img {
+    border-radius: 12px
+}
+
+.portfolio_images > img {
+    height: 100%;
+    width: 540px;
+}
+
+.portfolio_images > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    width: 256px;
+}
+
+.portfolio_images > div > img {
+    width: 100%;
+    height: 268px;
+}
+
