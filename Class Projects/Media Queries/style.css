@@ -1,0 +1,46 @@
+section {
+    display: flex;
+}
+
+div {
+    height: 200px;
+    width: 200px;
+    background-color: blue;
+    margin: 10px;
+}
+
+div:first-child {
+    background-color: green;
+}
+
+
+
+@media screen and (max-width:400px) {
+    body {
+        background-color: aquamarine;
+    }
+
+    section {
+        flex-direction: column-reverse;
+    }
+}
+
+@media screen and (min-width:400px) and (max-width:600px) {
+    body {
+        background-color: coral;
+    }
+
+    section {
+        flex-direction: column;
+    }
+}
+
+@media screen and (min-width:600px) {
+    body {
+        background-color: red;
+    }
+
+    section {
+        flex-direction: row-reverse;
+    }
+}
